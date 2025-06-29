@@ -12,7 +12,7 @@ A modern React-based data visualization platform for charging station analytics 
 
 - **Dashboard Interface**: Comprehensive data visualization dashboard
   - Interactive charts using Chart.js and react-chartjs-2
-  - Real-time KPI monitoring (Infrastructure Units, Charging Growth, Localization Change, Fleet Growth)
+  - KPI monitoring (Infrastructure Units, Charging Growth, Localization Change, Fleet Growth)
   - Scenario results analysis
   - Responsive grid layout
 
