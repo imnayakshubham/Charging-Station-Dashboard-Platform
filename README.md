@@ -66,10 +66,6 @@ A modern React-based data visualization platform for charging station analytics 
    - Sign up at [clerk.com](https://clerk.com)
    - Create a new application
    - Copy your publishable key to the `.env` file
-   - Configure allowed redirect URLs in your Clerk dashboard:
-     - `http://localhost:3000/sign-in`
-     - `http://localhost:3000/sign-up`
-     - `http://localhost:3000/sso-callback`
 
 5. **Start Development Server**
    ```bash
