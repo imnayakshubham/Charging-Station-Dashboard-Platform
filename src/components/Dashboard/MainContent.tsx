@@ -12,7 +12,7 @@ export function MainContent() {
 
     return (
         <>
-            <div className="flex-1 overflow-auto p-6 space-y-6 bg-[#161618] border border-[#525252]">
+            <div className="flex-1 p-6 space-y-6 bg-[#161618] border border-[#525252]">
                 <div className="flex items-center justify-between px-6 py-4 flex-wrap gap-4">
                     <div className="flex items-center space-x-4">
                         <div className="flex items-center space-x-3">

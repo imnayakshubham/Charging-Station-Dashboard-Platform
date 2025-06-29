@@ -129,7 +129,7 @@ const filterVariables = (variables: Variable[], searchTerm: string): Variable[] 
 
 export const useAppStore = create<AppState & AppActions>()(
   devtools(
-    (set, get) => ({
+    (set) => ({
       // Initial state
       variables: initialVariables,
       selectedVariables: ["carbon1", "co2-distribution", "fleet-sizing"],

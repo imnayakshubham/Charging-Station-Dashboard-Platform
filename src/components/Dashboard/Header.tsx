@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "../ui/button"
 
 const tabs = [
-    { name: "Charging Stations", path: "/" },
+    { name: "Charging Stations", path: "/dashboard" },
     { name: "Fleet Sizing", path: "#" },
     { name: "Parking", path: "#" },
 ]
@@ -14,12 +14,12 @@ export function Header() {
     const location = useLocation()
 
     const getCurrentTab = () => {
-        if (location.pathname === "/") return "/"
+        if (location.pathname === "/dashboard") return "/dashboard"
         return location.pathname
     }
 
     return (
-        <div className="border-b border-[#2a2a2a] bg-[#0a0a0a]">
+        <header className="border-b border-[#2a2a2a] bg-[#0a0a0a] sticky top-[-1.2%] backdrop-blur z-[5000]">
             <div className="flex items-center justify-between px-6 py-4">
                 <div className="flex items-center space-x-8">
                     <div className="flex space-x-1">
@@ -49,6 +49,6 @@ export function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }

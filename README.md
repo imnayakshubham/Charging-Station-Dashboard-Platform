@@ -67,3 +67,24 @@ export default tseslint.config([
   },
 ])
 ```
+
+## Clerk Authentication Setup
+
+This project uses Clerk for authentication. To set up email verification in development mode:
+
+1. Create a `.env` file in the root directory
+2. Add your Clerk publishable key:
+   ```
+   VITE_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here
+   ```
+3. In your Clerk dashboard, ensure email verification is enabled for your application
+4. For development mode, you may need to configure allowed redirect URLs in your Clerk dashboard
+
+### Email Verification Routes
+
+The application includes the following routes for email verification:
+- `/sign-up/verify-email-address` - Main verification page
+- `/verify-email-address` - Alternative verification route
+- `/sign-up/verify` - Additional verification route
+
+The verification flow is handled by the `VerifyEmailPage` component which properly manages the verification state.
